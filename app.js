@@ -23,6 +23,9 @@ app.use(cors({
     methods:["GET","PUT","POST","DELETE"],
     credentials:true
 }))
+console.log("Portfolio URL:", process.env.PORTFOLIO_URL);
+console.log("Dashboard URL:", process.env.DASHBOARD_URL);
+
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
