@@ -18,6 +18,7 @@ dotenv.config({
 
 app.use(cors({
     origin: '*',
+
     origin:[process.env.PORTFOLIO_URL,process.env.DASHBOARD_URL],
     methods:["GET","PUT","POST","DELETE"],
     credentials:true
